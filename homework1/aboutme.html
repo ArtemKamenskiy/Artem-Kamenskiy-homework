@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>About Me</title>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+</head>
+<body>
+	<div class="block">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="aboutme">
+			<div class="headline">
+				<p class="about">
+					<span class="red">A</span>bout<span class="red">M</span>e
+				</p>
+			</div>
+			<hr/>
+				<div class="myfoto">
+				</div>
+				<div class="me">
+					<p class="text">Мене звати Каменський Артем Олегович, я народився 03.01.1998р. в м. Черкаси. З 2004р. по 2015р. я навчався в Черкаській заальноосвітній школі №2. Під час навчання я займався спортом: футболом та плаванням.
+					З 2015р. я став студентом будівелього факультету Черкаського державного технологічного університету. Моя спеціальність - Хімічна технологія. Зараз я на 4 курсі. Під час навчання на 3 курсі я зацікавився програмуванням. Цим літом почав верстати перші шаблони.</p>
+				</div>
+		</div>
+	</div>
+	<!--------------------------------------------------------------------------------------------Style CSS---------------------------------------------------------------------------------------------->
+	<style type="text/css">
+		.block{
+			width: 1200px;
+			height: auto;
+			margin: 0 auto;
+		}
+		.aboutme{
+			width: 1200px;
+			height: 600px;
+			margin: 0 auto;
+			border: 1px solid red;
+			border-radius: 30px;
+			margin-top: 300px;
+			position: absolute;
+			
+		}
+		.line1{
+			width: 3px;
+			height: 300px;
+			background-color: grey;
+			margin-left: 300px;
+			position: absolute;
+		}
+		.line2{
+			width: 3px;
+			height: 300px;
+			background-color: grey;
+			margin-left: 900px;
+			position: absolute;
+		}
+		.headline{
+			width: 1200px;
+			height: 100px;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+		}
+		.about{
+			font-size: 60px;
+			font-family: 'Mali', cursive;
+			position: absolute;
+			display: flex;
+			margin: 0 auto;
+			transition: 0.2s;
+		}
+		.red{
+			color: red;
+		}
+		.myfoto{
+			width: 300px;
+			height: 400px;
+			margin-top: 35px;
+			margin-left: 50px;
+			position: absolute;
+			background-image: url(me.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			box-shadow: 0px 3px 20px rgba(0,0,0,.35);
+			border-radius:20px;
+		}
+		.me{
+			width: 750px;
+			height: 400px;
+			margin-top: 35px;
+			position: absolute;
+			margin-left: 400px;
+			box-shadow: 0px 3px 20px rgba(0,0,0,.25) ;
+			border-radius: 20px;
+		}
+		.about:hover{
+			border-bottom: 3px solid red;
+		}
+		.text{
+			font-size: 20px;
+			text-align: justify;
+			font-family: 'Indie Flower', cursive;
+		}
+	</style>
+</body>
+</html>
