@@ -87,131 +87,133 @@
 				}	
 			</style>
 		<h1 class="heading">Profile edit page</h1>
-		<fieldset>
-			<legend>Basic info</legend>
-			<div class="block">
-				<label class="l1">Id</label>
-				<input type="text" name="" class="inp1">
-			</div>
-			<div class="block">
-				<label class="l1">First Name</label>
-				<input type="text" name="" class="inp1">
-			</div>
-			<div class="block">
-				<label class="l1">Last Name</label>
-				<input type="text" name="" class="inp1">
-			</div>
-			<div class="block">
-				<label class="l1">Password</label>
-				<input type="Password" name="" class="inp1">
-			</div>
-			<div class="block">
-				<label class="l1">Phone</label>
-				<input type="tel" name="" class="inp1">
-			</div>
-			<div class="block">
-				<label class="l1">Email</label>
-				<input type="email" name="" class="inp1">
-			</div>
-			<div class="block">
-				<input type="checkbox" name="" class="inp2">
-				<label class="l2">Keep my email adress private</label><br/>
-				<p>We'll remove your publick profile email and use
-					1978331+username@users.noreply.localhost</p>
-			</div>
-			<div class="block">
-				<label class="l1">DOB</label>
-				<input type="date" name="" class="inp1">
-			</div>
-			<div class="block">
-				<label class="l1">Blog url</label>
-				<input type="url" name="" class="inp1">
-			</div>
-			<div class="block">
-				<label class="l1">About me</label>
-				<textarea class="area"></textarea>
-			</div>
-			<div class="block">
-				<label class="l1">Profile picture</label>
-				<input type="file" name="" class="inp3">
-			</div>
-		</fieldset>
-		<fieldset>
-			<legend>Professional info</legend>
-			<div class="block">
-				<label class="l1">Desire to study</label>
-				<input type="range" name="" class="inp1">
-			</div>
-			<div class="block">
-				<label class="l1">Experience</label>
-				<input type="number" name="" class="experience">
-			</div>
-			<div class="block">
-				<label class="l1">Development Experience</label>
-				<div class="chkbx">
-					<input type="radio" name="" id="1" class="inp2">
-					<label class="l2">Learning to program</label>
+		<form action="" method="post">
+			<fieldset>
+				<legend>Basic info</legend>
+				<div class="block">
+					<label class="l1">Id</label>
+					<input type="text" name="" class="inp1">
 				</div>
-				<div class="chkbx">
-					<input type="radio" name="" id="2" class="inp2">
-					<label class="l2">Junior Developer</label>
+				<div class="block">
+					<label class="l1">First Name</label>
+					<input type="text" name="" class="inp1">
 				</div>
-				<div class="chkbx">
-					<input type="radio" name="" id="3" class="inp2">
-					<label class="l2">Mid-Level Developer</label>
+				<div class="block">
+					<label class="l1">Last Name</label>
+					<input type="text" name="" class="inp1">
 				</div>
-				<div class="chkbx">
-					<input type="radio" name="" id="4" class="inp2">
-					<label class="l2" for="4">Senior Developer</label>
+				<div class="block">
+					<label class="l1">Password</label>
+					<input type="Password" name="" class="inp1">
 				</div>
-			</div>
-			<div class="block">
-				<label class="l1">Country</label>
-					<select class="inp1">
-						<option disabled>Choose your country</option>
-						<option value="Ukraine">Ukraine</option>
-						<option value="USA">USA</option>
-						<option value="Thailand">Thailand</option>
-						<option value="Spain">Spain</option>
-					</select>
-			</div>
-			<div class="block">
-				<label class="l1">Skills</label>
-				<div class="languages">
-						<div class="chkbx">
-							<input type="checkbox" name="" class="inp2">
-							<label class="l2">HTML</label>
-						</div>
-						<div class="chkbx">
-							<input type="checkbox" name="" class="inp2">
-							<label class="l2">CSS</label>
-						</div>
-						<div class="chkbx">
-							<input type="checkbox" name="" class="inp2">
-							<label class="l2">JavaScript</label>
-						</div>
-						<div class="chkbx">
-							<input type="checkbox" name="" class="inp2">
-							<label class="l2">R</label>
-						</div>
-						<div class="chkbx">
-							<input type="checkbox" name="" class="inp2">
-							<label class="l2">Scala</label>
-						</div>
-						<div class="chkbx">
-							<input type="checkbox" name="" class="inp2">
-							<label class="l2">Haskell</label>
-						</div>
+				<div class="block">
+					<label class="l1">Phone</label>
+					<input type="tel" name="" class="inp1">
+				</div>
+				<div class="block">
+					<label class="l1">Email</label>
+					<input type="email" name="" class="inp1">
+				</div>
+				<div class="block">
+					<input type="checkbox" name="" class="inp2">
+					<label class="l2">Keep my email adress private</label><br/>
+					<p>We'll remove your publick profile email and use
+						1978331+username@users.noreply.localhost</p>
+				</div>
+				<div class="block">
+					<label class="l1">DOB</label>
+					<input type="date" name="" class="inp1">
+				</div>
+				<div class="block">
+					<label class="l1">Blog url</label>
+					<input type="url" name="" class="inp1">
+				</div>
+				<div class="block">
+					<label class="l1">About me</label>
+					<textarea class="area"></textarea>
+				</div>
+				<div class="block">
+					<label class="l1">Profile picture</label>
+					<input type="file" name="" class="inp3">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Professional info</legend>
+				<div class="block">
+					<label class="l1">Desire to study</label>
+					<input type="range" name="" class="inp1">
+				</div>
+				<div class="block">
+					<label class="l1">Experience</label>
+					<input type="number" name="" class="experience">
+				</div>
+				<div class="block">
+					<label class="l1">Development Experience</label>
+					<div class="chkbx">
+						<input type="radio" name="" id="1" class="inp2">
+						<label class="l2" for="1">Learning to program</label>
 					</div>
+					<div class="chkbx">
+						<input type="radio" name="" id="2" class="inp2">
+						<label class="l2" for="2">Junior Developer</label>
 					</div>
-						<input type="hidden" name="" class="inp2">
+					<div class="chkbx">
+						<input type="radio" name="" id="3" class="inp2">
+						<label class="l2" for="3">Mid-Level Developer</label>
 					</div>
+					<div class="chkbx">
+						<input type="radio" name="" id="4" class="inp2">
+						<label class="l2" for="4">Senior Developer</label>
+					</div>
+				</div>
+				<div class="block">
+					<label class="l1">Country</label>
+						<select class="inp1">
+							<option disabled>Choose your country</option>
+							<option value="Ukraine">Ukraine</option>
+							<option value="USA">USA</option>
+							<option value="Thailand">Thailand</option>
+							<option value="Spain">Spain</option>
+						</select>
+				</div>
+				<div class="block">
+					<label class="l1">Skills</label>
+					<div class="languages">
+							<div class="chkbx">
+								<input type="checkbox" name="" class="inp2">
+								<label class="l2">HTML</label>
+							</div>
+							<div class="chkbx">
+								<input type="checkbox" name="" class="inp2">
+								<label class="l2">CSS</label>
+							</div>
+							<div class="chkbx">
+								<input type="checkbox" name="" class="inp2">
+								<label class="l2">JavaScript</label>
+							</div>
+							<div class="chkbx">
+								<input type="checkbox" name="" class="inp2">
+								<label class="l2">R</label>
+							</div>
+							<div class="chkbx">
+								<input type="checkbox" name="" class="inp2">
+								<label class="l2">Scala</label>
+							</div>
+							<div class="chkbx">
+								<input type="checkbox" name="" class="inp2">
+								<label class="l2">Haskell</label>
+							</div>
+						</div>
+						</div>
+							<input type="hidden" name="" class="inp2">
+						</div>
+				</div>
+			</fieldset>
+			<div class="but">
+				<button type="reset" name="cancel">Cancel</button>
+				<button type="submit">Submit</button>
 			</div>
-		</fieldset>
-		<div class="but">
-			<button type="reset" name="cancel">Cancel</button>
-			<button type="submit">Submit</button>
-		</div>
+		</form>
 		<table border="2px" align="center" width="90%" cellspacing="0" >
 			<tr>
 				<th rowspan="2"></th>
