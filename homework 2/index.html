@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
 	</head>
 	<body>
 		<style type="text/css">
@@ -13,50 +14,59 @@
 			*{
 				margin: 0px;
 				padding: 0px;
+				font-family: 'Mali', cursive;
 			}
 			.block{
-				width: 500px;
-				height: 580px;
+				width: 630px;
+				height: 700px;
 				border:2px solid black;
 				display: flex;
 				margin-left: 10px;	
 			}
+			.heading{
+				margin-left: 120px;
+
+			}
 			.professional{
-				width: 500px;
-				height: 450px;
+				width: 630px;
+				height: 480px;
 				border:2px solid black;
 				display: flex;
 				margin-left: 10px;	
 			}
 			.block1{
-				width: 100px;
+				width: 150px;
 				margin-top: 20px;
 				margin-left: 10px;
 			}
 			.block2{
-				width: 300px;
-				margin-left: 30px;
+				width: 450px;
+				margin-left: 50px;
 				margin-top: 20px;
 			}
 			.inp1{
 				margin-bottom: 29px;
 				border: 2px solid black;
-				width: 300px;
+				width: 400px;
 			}
+
 			p{
-				width: 310px;
+				width: 380px;
 				margin-left: 19px;
 				margin-bottom: 5px;
 			}
 			.inp4{
-				margin-bottom: 28px;
+				margin-bottom: 35px;
 				width: 50px;
 			}
 			.chkbx{
 				margin-bottom: 5px;
 			}
 			.l1{
-				margin-bottom: 90px;
+				margin-bottom: 103px;
+			}
+			.l2{
+				margin-bottom: 80px;
 			}
 			.country{
 				margin-top: 35px;
@@ -64,7 +74,7 @@
 			.area{
 				height: 80px;
 				border: 2px solid black;
-				width: 300px;
+				width: 400px;
 				margin-bottom: 15px;
 			}
 			button{
@@ -98,7 +108,7 @@
 				text-align: left;
 			}
 		</style>
-		<h1>Profile edit page</h1>
+		<h1 class="heading">Profile edit page</h1>
 		<p class="info">Basic info</p>
 		<div class="block">
 			<div class="block1">
@@ -110,7 +120,8 @@
 					<li>Phone</li>
 					<li class="l1">Email</li>
 					<li>DOB</li>
-					<li class="l1">Blog url</li>
+					<li>Blog url</li>
+					<li class="l2">About me</li>
 					<li>Profile picture</li>
 				</ul>
 			</div>
@@ -125,9 +136,10 @@
 					<input type="checkbox" name="" class="inp2">
 					<label>Keep my email adress private</label>
 				</div>
-				<p>We'll remove your publick profile email and use
+				<p class="texts">We'll remove your publick profile email and use
 				1978331+username@users.noreply.localhost</p>
 				<input type="date" name="" class="inp1">
+				<input type="url" name="" class="inp1">
 				<textarea class="area"></textarea>
 				<input type="file" name="" >
 			</div>
