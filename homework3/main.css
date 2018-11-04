@@ -48,6 +48,46 @@ li{
 	height: 739px;
 	margin-bottom: 32px;
 }
+.theatre{
+	position: absolute;
+}
+.slider-button{
+	display: flex;
+	width: 1005px;
+ 	height: 93px;
+ 	position: absolute;
+ 	margin-left: 460px;
+ 	margin-top: 597px;
+}
+.slider-arrow{
+	width: 36px;
+  	height: 36px;
+ 	border-radius: 3px;
+ 	box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.4);
+ 	background-size: contain;
+    background-position: center;
+  	background-repeat: no-repeat;
+  	border: none;
+  	margin-top: 29px;
+}
+.slider-arrow1{
+  	background-image: linear-gradient(to top, #dd492a, #e54b2b);
+  	margin-right: 4px;
+}
+.slider-arrow2{
+  	background-image: linear-gradient(to top, #4c4c4c, #505050);
+  	margin-left: 4px;
+}
+.ticket{
+	width: 92px;
+ 	height: 93px;
+  	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	border: none;
+  	background-color: transparent;
+  	padding: 0px;
+}
 .nav1{
 	display: flex;
 	height: 76px;
