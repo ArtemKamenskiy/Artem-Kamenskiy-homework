@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Homework 2</title>
+			<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+		</head>
+		<body>
+			<style type="text/css">
+				.heading{
+					font-family: 'Mali', cursive;
+					}
+				.block{
+					clear: both;
+					text-align: right;
+					font-family: 'Mali', cursive;	
+				}
+				.inp1{
+					border: 1px solid black;
+					margin-bottom: 30px;
+					width: 400px;
+					margin-left: 70px;
+				}
+				.inp2{
+					float: left;
+					margin-bottom: 20px;
+					clear: both;
+					margin-left: 195px;	
+				}
+				.inp3{
+					margin-bottom: 30px;
+					width: 400px;
+					margin-left: 70px;
+				}
+				.experience{
+					float: left;
+					margin-left: 105px;
+					margin-bottom: 20px;
+				}
+				.l1{
+					float: left;
+				}
+				.l2{
+					float: left;
+				}
+				fieldset{
+					float: left;
+					margin-right: 200px;
+				}
+				.area{
+					width: 396px;
+					height: 50px;
+					border: 1px solid black;
+					margin-bottom: 30px;
+					margin-left: 70px;	
+				}
+				p{
+					width: 380px;
+					height: 50px;
+					margin-left: 197px;
+				}
+				.but{
+					width: 250px;
+					height: 100px;
+					margin: 0 auto;
+				}
+				button{
+					margin-left: 40px;
+					margin-top: 200px;
+				}
+				table{
+					margin: 0 auto;
+					margin-top: 850px;
+					margin-bottom: 50px;
+				}
+				td{
+					text-align: center;
+					font-size: 20px;
+					height: 30px;
+				}
+				th{
+					height: 60px;
+					font-size: 30px;
+				}
+				.number{
+					width: 90px;
+				}
+				.lastcell{
+					text-align: left;
+				}	
+			</style>
+		<h1 class="heading">Profile edit page</h1>
+		<form action="" method="post">
+			<fieldset>
+				<legend>Basic info</legend>
+				<div class="block">
+					<label class="l1">Id</label>
+					<input type="text" name="id" class="inp1">
+				</div>
+				<div class="block">
+					<label class="l1">First Name</label>
+					<input type="text" name="First Name" class="inp1">
+				</div>
+				<div class="block">
+					<label class="l1">Last Name</label>
+					<input type="text" name="Last Name" class="inp1">
+				</div>
+				<div class="block">
+					<label class="l1">Password</label>
+					<input type="Password" name="Password" class="inp1">
+				</div>
+				<div class="block">
+					<label class="l1">Phone</label>
+					<input type="tel" name="Phone" class="inp1">
+				</div>
+				<div class="block">
+					<label class="l1">Email</label>
+					<input type="email" name="Email" class="inp1">
+				</div>
+				<div class="block">
+					<input type="checkbox" name="Keep my email adress private" class="inp2">
+					<label class="l2">Keep my email adress private</label><br/>
+					<p>We'll remove your publick profile email and use
+						1978331+username@users.noreply.localhost</p>
+				</div>
+				<div class="block">
+					<label class="l1">DOB</label>
+					<input type="date" name="DOB" class="inp1">
+				</div>
+				<div class="block">
+					<label class="l1">Blog url</label>
+					<input type="url" name="Blog" class="inp1">
+				</div>
+				<div class="block">
+					<label class="l1">About me</label>
+					<textarea class="area" name="About"></textarea>
+				</div>
+				<div class="block">
+					<label class="l1">Profile picture</label>
+					<input type="file" name="Profile" class="inp3">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Professional info</legend>
+				<div class="block">
+					<label class="l1">Desire to study</label>
+					<input type="range" name="Study" class="inp1">
+				</div>
+				<div class="block">
+					<label class="l1">Experience</label>
+					<input type="number" name="Experience" class="experience">
+				</div>
+				<div class="block">
+					<label class="l1">Development Experience</label>
+					<div class="chkbx">
+						<input type="radio" name="Learning" id="id1" class="inp2">
+						<label class="l2" for="id1">Learning to program</label>
+					</div>
+					<div class="chkbx">
+						<input type="radio" name="Junior" id="id2" class="inp2">
+						<label class="l2" for="id2">Junior Developer</label>
+					</div>
+					<div class="chkbx">
+						<input type="radio" name="Mid-Level" id="id3" class="inp2">
+						<label class="l2" for="id3">Mid-Level Developer</label>
+					</div>
+					<div class="chkbx">
+						<input type="radio" name="Senior" id="id4" class="inp2">
+						<label class="l2" for="id4">Senior Developer</label>
+					</div>
+				</div>
+				<div class="block">
+					<label class="l1">Country</label>
+						<select class="inp1">
+							<option disabled>Choose your country</option>
+							<option value="Ukraine">Ukraine</option>
+							<option value="USA">USA</option>
+							<option value="Thailand">Thailand</option>
+							<option value="Spain">Spain</option>
+						</select>
+				</div>
+				<div class="block">
+					<label class="l1">Skills</label>
+					<div class="languages">
+							<div class="chkbx">
+								<input type="checkbox" name="HTML" class="inp2">
+								<label class="l2">HTML</label>
+							</div>
+							<div class="chkbx">
+								<input type="checkbox" name="CSS" class="inp2">
+								<label class="l2">CSS</label>
+							</div>
+							<div class="chkbx">
+								<input type="checkbox" name="JavaScript" class="inp2">
+								<label class="l2">JavaScript</label>
+							</div>
+							<div class="chkbx">
+								<input type="checkbox" name="R" class="inp2">
+								<label class="l2">R</label>
+							</div>
+							<div class="chkbx">
+								<input type="checkbox" name="Scala" class="inp2">
+								<label class="l2">Scala</label>
+							</div>
+							<div class="chkbx">
+								<input type="checkbox" name="Haskell" class="inp2">
+								<label class="l2">Haskell</label>
+							</div>
+						</div>
+						</div>
+							<input type="hidden" name="" class="inp2">
+						</div>
+				</div>
+			</fieldset>
+			<div class="but">
+				<button type="reset" name="Cancel">Cancel</button>
+				<button type="submit" name="Submit">Submit</button>
+			</div>
+		</form>
+		<table border="2px" align="center" width="90%" cellspacing="0" >
+			<thead>
+				<tr>
+					<th rowspan="2"></th>
+					<th>I-A</th>
+					<th>I-Б</th>
+					<th colspan="2">I-B</th>
+					<th>I-I</th>
+					<th>II-A</th>
+					<th>II-Б</th>
+					<th colspan="2">II-B</th>
+					<th colspan="2">III-A</th>
+					<th colspan="2">III-B</th>
+					<th>III-I</th>
+					<th rowspan="2"></th>
+				</tr>
+				<tr>
+					<td colspan="2">Підгрупа I</td>
+					<td>Підгрупа I</td>
+					<td>Підгрупа II</td>
+					<td>Підгрупа II</td>
+					<td colspan="2">Підгрупа I</td>
+					<td>Підгрупа II</td>
+					<td>Підгрупа II</td>
+					<td>Підгрупа I</td>
+					<td>Підгрупа II</td>
+					<td>Підгрупа I</td>
+					<td>Підгрупа II</td>
+					<td>Підгрупа II</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th class="number">1</th>
+					<td colspan="5">Фізичне виховання</td>
+					<td colspan="2">Вища математика для фізиків доцент Корнієнко С.В. ауд. 258</td>
+					<td colspan="2">Прикладна механіка та основи конструювання доц.Луценко Г.В. ауд. 279</td>
+					<td colspan="2">Ділова іноземна мова ст.викл. Зінченко А.В. ауд. 267</td>
+					<td colspan="3">Теорія ймовірностей та випадкові процеси доц. Ральченко С.А. ауд. 136</td>
+					<th class="number">1</th>
+				</tr>
+				<tr>
+					<th class="number">2</th>
+					<td colspan="2">Математичний аналіз доц. Лила Д.М. ауд. 241</td>
+					<td></td>
+					<td>Інженерна та комп'ютерна графіка ст.викл. Власенко В.М. ауд. 131</td>
+					<td>Дискретна математика доц. Атамась В.В. ауд. 282</td>
+					<td colspan="2">Педагогіка доц. Лещенко І.Т. ауд. 258</td>
+					<td>Іноземна мова викл. Зінченко А.В. ауд. 242</td>
+					<td></td>
+					<td colspan="2">Чисельні методи у фізиці доц. Сторожук Н.В. ауд.</td>
+					<td></td>
+					<td></td>
+					<td>Вища математика доц. Босовський М.В. ауд. 243</td>
+					<th class="number">2</th>
+				</tr>
+				<tr>
+					<th class="number">3</th>
+					<td colspan="2">Математичний аналіз доц. Лила Д.М. ауд. 241</td>
+					<td>Інженерна та комп'ютерна графіка ст.викл. Власенко В.М. ауд. 131</td>
+					<td></td>
+					<td>Дискретна математика доц. Атамась В.В. ауд. 282</td>
+					<td colspan="2">Педагогіка доц. Лещенко І.Т. ауд. 258</td>
+					<td></td>
+					<td>Іноземна мова викл. Зінченко А.В. ауд. 242</td>
+					<td colspan="2">Чисельні методи у фізиці доц. Сторожук Н.В. ауд.</td>
+					<td></td>
+					<td></td>
+					<td>Вища математика доц. Босовський М.В. ауд. 243</td>
+					<th class="number">3</th>
+				</tr>
+				<tr>
+					<th class="number">4</th>
+					<td colspan="2"></td>
+					<td colspan="2">Фізика ст.викл. Власенко В.М. ауд. 279</td>
+					<td></td>
+					<td colspan="2"></td>
+					<td colspan="2"></td>
+					<td colspan="2"></td>
+					<td></td>
+					<td></td>
+					<td>Вища математика доц. Босовський М.В. ауд. 243</td>
+					<th class="number">4</th>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td class="lastcell" colspan="16">Заступник директора з навчально-методичної роботи, ст. викладач___________________В.М. Власенко</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>
