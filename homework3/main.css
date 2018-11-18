@@ -42,6 +42,7 @@ li{
 	background-repeat: no-repeat;
 	margin-top: 3px;
 	position: relative;
+	overflow: hidden;
 }
 .slider{
 	height: 739px;
