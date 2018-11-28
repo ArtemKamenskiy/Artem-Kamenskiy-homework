@@ -152,14 +152,14 @@ li{
 }
 @media(max-width: 768px){
 	.messages_block{
-		width: 100%;
+		max-width: 100%;
 		height: auto;
 		margin: 0 auto;
 		margin-top: 30px;
 		margin-left: 120px;	
 	}
 	.messages_block2{
-		width: 100%;
+		max-width: 100%;
 		height: auto;
 		margin: 0 auto;
 		margin-top: 30px;
@@ -184,7 +184,7 @@ li{
 		margin: 0 auto;
 	}
 	.download_block{
-		width: 100%;
+		max-width: 100%;
 		height: auto;
 		margin: 0 auto;
 		margin-top: 300px;
