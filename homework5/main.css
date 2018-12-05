@@ -204,6 +204,9 @@ li{
 	margin-left: 306px;
 }
 @media(max-width: 768px){
+	html{
+		width: 900px;
+	}
 	body{
 		width: 900px;
 	}
