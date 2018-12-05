@@ -1,8 +1,6 @@
 html, body{
 	padding: 0px;
 	margin: 0px;
-	width: 100%;
-	min-width: 100%;
 }
 @font-face{
 	font-family: Lato-Regular;
@@ -206,6 +204,9 @@ li{
 	margin-left: 306px;
 }
 @media(max-width: 768px){
+	body{
+		width: 900px;
+	}
 	.messages{
 		width: 900px;
 	}
