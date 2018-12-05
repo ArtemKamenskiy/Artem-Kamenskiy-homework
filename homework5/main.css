@@ -217,13 +217,11 @@ li{
 	.messages_block{
 		max-width: 900px;
 		height: auto;
-		margin: 0 auto;
 		margin-top: 30px;
 	}
 	.messages_block2{
 		max-width: 900px;
 		height: auto;
-		margin: 0 auto;
 		margin-top: 30px;
 	}
 	.block{
@@ -235,7 +233,6 @@ li{
 	}
 	.subscribe-div{
 		max-width: 900px;
-		margin: 0 auto;
 		margin-top: 365px;
 	}
 	.subscribe-h1{
@@ -280,7 +277,6 @@ li{
 	.download_block{
 		max-width: 900px;
 		height: auto;
-		margin: 0 auto;
 	}
 	.download-app-p{
 		width: 450px;
