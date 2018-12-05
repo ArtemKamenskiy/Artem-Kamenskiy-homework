@@ -213,6 +213,7 @@ li{
 	}
 	.messages{
 		width: 900px;
+		height: auto;
 	}
 	.messages_block{
 		max-width: 900px;
@@ -233,7 +234,6 @@ li{
 	}
 	.subscribe-div{
 		max-width: 900px;
-		margin-top: 365px;
 	}
 	.subscribe-h1{
 		width: 500px;
