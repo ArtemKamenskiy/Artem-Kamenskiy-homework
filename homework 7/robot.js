@@ -1,18 +1,18 @@
 // 1 level
 for( var i = 0; i<2; i++){
-    north()
+    north();
 }
 // 2 level
 for( var i = 0; i<16; i++){
-    east()
+    east();
 }
 // 3 level
 for( var i = 0; i<7; i++){
-    south()
-    east()
+    south();
+    east();
 }
 // 4 level
 for( var i = 0; i<=7; i++){
-    south()
-    east()
+    south();
+    east();
 }
