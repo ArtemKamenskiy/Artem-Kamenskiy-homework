@@ -435,6 +435,7 @@ nav{
 }
 .subscribe{
 	height: 608px;
+	border-bottom: 1px solid #e0e0e0;
 }
 .subscribe-div{
 	width: 1200px;
