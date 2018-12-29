@@ -1,0 +1,124 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+}
+*{
+	margin: 0px;
+}
+@font-face{
+	font-family: Roboto-Thin;
+	src:url(fonts/Roboto-Thin.ttf);
+}
+@font-face{
+	font-family: Roboto-Light;
+	src:url(fonts/Roboto-Light.ttf);
+}
+@font-face{
+	font-family: Roboto-Regular;
+	src:url(fonts/Roboto-Regular.ttf);
+}
+li{
+	list-style: none;
+	text-transform: uppercase;
+}
+.header{
+	height: 76px;
+	background-image: linear-gradient(to left, #bf1e2e, #f1592a);
+	display: flex;
+}
+.wrapper{
+	display: flex;
+	justify-content: center;
+}
+.slider{
+	height: 739px;
+	margin-bottom: 32px;
+}
+.theatre{
+	position: absolute;
+	background-image: url(images/img1.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 739px;
+	width: 1929px;
+}
+.theatre2{
+	position: absolute;
+	background-image: url(images/img5.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 739px;
+	width: 1929px;
+}
+.theatre3{
+	position: absolute;
+	background-image: url(images/coffe.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 739px;
+	width: 1929px;
+}
+.slider-button{
+	display: flex;
+	width: 1005px;
+ 	height: 93px;
+ 	position: absolute;
+ 	margin-left: 460px;
+ 	margin-top: 597px;
+}
+.slider-arrowf{
+	display: flex;
+	width: 36px;
+  	height: 36px;
+ 	border-radius: 3px;
+ 	box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.4);
+  	border: none;
+  	margin: 29px 4px 0px 4px;
+  	background-color: #4E4E4E;
+}
+.slider-arrows{
+	display: flex;
+	width: 36px;
+  	height: 36px;
+ 	border-radius: 3px;
+ 	box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.4);
+  	border: none;
+  	margin: 29px 4px 0px 4px;
+  	background-color: #4E4E4E;
+}
+.slider-arrow:hover{
+	background-color: #E54A2B;
+}
+.slider-arrow1{
+	width: 9px;
+	height: 19px;
+  	background-image: url(icon/arrow-left.png);
+  	margin-left: 5px;
+}
+.slider-arrow2{
+	width: 9px;
+	height: 19px;
+  	background-image: url(icon/arrow-right.png);
+  	margin-left: 7px;
+}
+.ticket{
+	width: 92px;
+ 	height: 93px;
+ 	background-image: url(icon/ticket.png);
+  	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	border: none;
+  	background-color: transparent;
+  	padding: 0px;
+}
+.orange-ticket{
+	background-image: url(icon/orange-ticket.png);
+}
