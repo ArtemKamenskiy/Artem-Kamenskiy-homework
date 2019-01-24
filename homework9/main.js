@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setTimeout(function() {
         console.log(rand);
-    }, 1000)
+    }, 1000);
 
 
     setTimeout(function() {
         console.log(rand);
-    }, 2000)
+    }, 2000);
 
     setTimeout(getPostByCallback, 2500);
     setTimeout(getPostByPromise, 3000);
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log(JSON.parse(responseText));
         });
 
-    };
+    }
 
 
     //getPostByPromise
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }).catch((status) => {
             console.warn(status)
         });
-    };
+    }
 
 
 });
