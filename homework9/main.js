@@ -14,6 +14,8 @@ setTimeout(function() {
 	console.log(rand);
 } ,2000)
 
+setTimeout(getPostByCallback, 2500);
+setTimeout(getPostByPromise, 3000);
 
 //getPostByCallback
 
