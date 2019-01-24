@@ -40,7 +40,7 @@ function getPostByCallback(){
 //getPostByPromise
 
 function getPostByPromise(){
-	let myRequest = new Promise((resolve, reject)) => {
+	let myRequest = new Promise((resolve, reject) => {
 		let xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function(){
 		if (this.readyState ===  4 &&  this.status === 200) {
@@ -50,7 +50,7 @@ function getPostByPromise(){
 	};
 	xhttp.open("GET", "http://apistaging.theatre.pp.ua/posts.json?limit=${limitNumber}&page=${pageNumber}");
 	xhttp.send();
-	}
+	});
 
 	myRequest.then((responseText) => {
 		console.warn(JSON.parse(responseText))
