@@ -39,16 +39,15 @@ document.addEventListener("DOMContentLoaded", () => {
             xhttp.onreadystatechange = function() {
                 if (this.readyState === 4 && this.status === 200) {
                     resolve(this.responseText);
-                    reject(this.status);
                 }
             };
             xhttp.open("GET", "http://apistaging.theatre.pp.ua/posts.json?limit=${limitNumber}&page=${pageNumber}");
             xhttp.send();
         });
 
-        myRequest.then((responseText) => {
+        myRequest.then(responseText => {
             console.warn(JSON.parse(responseText))
-        }).catch((status) => {
+        }).catch(status => {
             console.warn(status)
         });
     }
