@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         myRequest.then(responseText => {
             console.warn(JSON.parse(responseText))
-        }).catch(status => {
-            console.warn(status)
+        }).catch(reject => {
+            console.error("Some problem")
         });
     }
 
