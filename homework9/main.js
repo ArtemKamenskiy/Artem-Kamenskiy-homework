@@ -57,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function getPost() {
          return getPostByPromise();
     }
-
     async function getPostByAsync() {
          let result = await getPost();
     }
