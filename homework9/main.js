@@ -53,10 +53,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // async/await
-    function getPost() {
-         return getPostByPromise();
-    }
     async function getPostByAsync() {
          let result = await getPost();
+    }
+    function getPost() {
+         return getPostByPromise();
     }
 });
