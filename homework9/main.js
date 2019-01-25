@@ -8,15 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(function() {
         console.log(rand);
     }, 1000);
-
-
     setTimeout(function() {
         console.log(rand);
     }, 2000);
-
     setTimeout(getPostByCallback, 2500);
     setTimeout(getPostByPromise, 3000);
-
+     setTimeout(getPostByAsync, 3000);
 
     //getPostByCallback
     function getPostByCallback() {
@@ -30,13 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
             xhttp.open("GET", "http://apistaging.theatre.pp.ua/posts.json?limit=${limitNumber}&page=${pageNumber}");
             xhttp.send();
         }
-
         post(function(responseText) {
             console.log(JSON.parse(responseText));
         });
-
     }
-
 
     //getPostByPromise
     function getPostByPromise() {
@@ -59,5 +53,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // async/await
+    function getPost() {
+         return getPostByPromise();
+    }
 
+    async function getPostByAsync() {
+         let result = await getPost();
+    }
 });
