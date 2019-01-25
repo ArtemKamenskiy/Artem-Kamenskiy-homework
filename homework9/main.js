@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 2000);
     setTimeout(getPostByCallback, 2500);
     setTimeout(getPostByPromise, 3000);
-     setTimeout(getPostByAsync, 3000);
+     setTimeout(getPostByAsync, 3500);
 
     //getPostByCallback
     function getPostByCallback() {
