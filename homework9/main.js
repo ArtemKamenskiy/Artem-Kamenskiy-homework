@@ -39,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
             xhttp.onreadystatechange = function() {
                 if (this.readyState === 4 && this.status === 200) {
                     resolve(this.responseText);
+                }else{
+                    reject(this.status);
                 }
             };
             xhttp.open("GET", "http://apistaging.theatre.pp.ua/posts.json?limit=${limitNumber}&page=${pageNumber}");
