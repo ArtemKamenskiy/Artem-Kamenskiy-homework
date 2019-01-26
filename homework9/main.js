@@ -39,7 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
             xhttp.onreadystatechange = function() {
                 if (this.readyState === 4 && this.status === 200) {
                     resolve(this.responseText);
-                }else{
+                }
+                if (this.readyState === 4 && this.status !== 200) {
                     reject(this.status);
                 }
             };
@@ -49,8 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         myRequest.then(responseText => {
             console.warn(JSON.parse(responseText))
-        }).catch(reject => {
-            console.error("Some problem")
+        }).catch(statusText => {
+            console.warn(status)
         });
     }
 
