@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		constructor(center, points) { 
 			this._center = center;
 		}
-		get PolygonPerimeter() {
-			return (Point1 + Point2 + Point3 + Point4 + Point5 + Point6);
-		}
+		// get PolygonPerimeter() {
+		// 	return ();
+		// }
 	}
 
 	class Rectangle {
@@ -98,15 +98,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			return Math.sqrt(Math.pow(this.x - point.x, 2) + Math.pow(this.y - point.y, 2));
 		}
 	}
-		// points for polygon
-		let Point1 = 20;
-		let Point2 = 30;
-		let Point3 = 40;
-		let Point4 = 50;
-		let Point5 = 10;
-		let Point6 = 20;
-		let points = [Point1, Point2, Point3, Point4, Point5, Point6];
-
 
 		let point = new Point (50, 100);
 		console.log(point);
@@ -127,7 +118,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		let circle = new Circle (shape, radius);
 		console.log(circle);
-
 
 	Shapes = {
 		Shape: Shape,
