@@ -69,10 +69,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			this._radius = radius;
 		}
 		get CircleArea() {
-			return (3.14 * (radius * 2));
+			return (Math.PI * (radius * 2));
 		}
 		get CirclePerimeter() {
-			return (2 * 3.14 * radius);
+			return (2 * Math.PI * radius);
 		}
 	}
 
