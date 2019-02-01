@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			return (this._width * this._height);
 		}
 		get RectanglePerimeter() {
-			return (this._width + this._height);
+			return ((this._width + this._height) * 2);
 		}
 	}
 
@@ -107,8 +107,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		let radius = 30;
 
-		let polygon = new Polygon(shape, points);
-		console.log(polygon);
+		// let polygon = new Polygon(shape, points);
+		// console.log(polygon);
 
 		let rectangle = new Rectangle (shape, 30, 20);
 		console.log(rectangle);
