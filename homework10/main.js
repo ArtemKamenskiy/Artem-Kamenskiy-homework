@@ -23,7 +23,6 @@
  *      площа(),
  *      периметр()
  */
-document.addEventListener('DOMContentLoaded', function() {
 
     class Shape {
         constructor(center) {
@@ -126,4 +125,3 @@ document.addEventListener('DOMContentLoaded', function() {
         Circle: Circle,
         Point: Point
     };
-});
