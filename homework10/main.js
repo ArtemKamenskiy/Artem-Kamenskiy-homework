@@ -28,7 +28,6 @@
 
     class Shape {
         /**
-         *
          * @param {point} center
          */
         constructor(center) {
@@ -47,7 +46,6 @@
 
     class Rectangle {
         /**
-         *
          * @param {point} center
          * @param {number} width
          * @param {number} height
@@ -58,14 +56,12 @@
             this._height = height;
         }
         /**
-         *
          * @returns {number} 
          */
         get RectangleArea() {
             return (this._width * this._height);
         }
         /**
-         *
          * @returns {number} 
          */
         get RectanglePerimeter() {
@@ -75,7 +71,6 @@
 
     class Square extends Rectangle {
         /**
-         *
          * @param {point} center
          * @param {number} width
          */
@@ -88,7 +83,6 @@
 
     class Circle {
         /**
-         *
          * @param {point} center
          * @param {number} radius
          */
@@ -97,14 +91,12 @@
             this._radius = radius;
         }
         /**
-         *
          * @returns {number} 
          */
         get CircleArea() {
             return (Math.PI * (radius * 2));
         }
         /**
-         *
          * @returns {number} 
          */
         get CirclePerimeter() {
