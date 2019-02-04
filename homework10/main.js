@@ -24,7 +24,13 @@
  *      периметр()
  */
 
+    
+
     class Shape {
+        /**
+         *
+         * @param {point} center
+         */
         constructor(center) {
             this._center = center;
         }
@@ -40,20 +46,39 @@
     }
 
     class Rectangle {
+        /**
+         *
+         * @param {point} center
+         * @param {number} width
+         * @param {number} height
+         */
         constructor(center, width, height) {
             this._center = center;
             this._width = width;
             this._height = height;
         }
+        /**
+         *
+         * @returns {number} 
+         */
         get RectangleArea() {
             return (this._width * this._height);
         }
+        /**
+         *
+         * @returns {number} 
+         */
         get RectanglePerimeter() {
             return ((this._width + this._height) * 2);
         }
     }
 
     class Square extends Rectangle {
+        /**
+         *
+         * @param {point} center
+         * @param {number} width
+         */
         constructor(center, width) {
             super(center, width, width);
             this._center = center;
@@ -62,13 +87,26 @@
     }
 
     class Circle {
+        /**
+         *
+         * @param {point} center
+         * @param {number} radius
+         */
         constructor(center, radius) {
             this._center = center;
             this._radius = radius;
         }
+        /**
+         *
+         * @returns {number} 
+         */
         get CircleArea() {
             return (Math.PI * (radius * 2));
         }
+        /**
+         *
+         * @returns {number} 
+         */
         get CirclePerimeter() {
             return (2 * Math.PI * radius);
         }
