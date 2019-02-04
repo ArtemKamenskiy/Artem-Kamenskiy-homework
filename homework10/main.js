@@ -24,134 +24,138 @@
  *      периметр()
  */
 
-    
 
-    class Shape {
-        /**
-         * @param {point} center
-         */
-        constructor(center) {
-            this._center = center;
-        }
+class Shape {
+    /**
+     * @param {point} center
+     */
+    constructor(center) {
+        this._center = center;
+    }
+}
+
+class Polygon {
+    constructor(center, points) {
+        this._center = center;
     }
 
-    class Polygon {
-        constructor(center, points) {
-                this._center = center;
-            }
-            // get PolygonPerimeter() {
-            // 	return ();
-            // }
+    // get PolygonPerimeter() {
+    // 	return ();
+    // }
+}
+
+class Rectangle {
+    /**
+     * @param {point} center
+     * @param {number} width
+     * @param {number} height
+     */
+    constructor(center, width, height) {
+        this._center = center;
+        this._width = width;
+        this._height = height;
     }
 
-    class Rectangle {
-        /**
-         * @param {point} center
-         * @param {number} width
-         * @param {number} height
-         */
-        constructor(center, width, height) {
-            this._center = center;
-            this._width = width;
-            this._height = height;
-        }
-        /**
-         * @returns {number} 
-         */
-        get RectangleArea() {
-            return (this._width * this._height);
-        }
-        /**
-         * @returns {number} 
-         */
-        get RectanglePerimeter() {
-            return ((this._width + this._height) * 2);
-        }
+    /**
+     * @returns {number}
+     */
+    get RectangleArea() {
+        return (this._width * this._height);
     }
 
-    class Square extends Rectangle {
-        /**
-         * @param {point} center
-         * @param {number} width
-         */
-        constructor(center, width) {
-            super(center, width, width);
-            this._center = center;
-            this._width = width;
-        }
+    /**
+     * @returns {number}
+     */
+    get RectanglePerimeter() {
+        return ((this._width + this._height) * 2);
+    }
+}
+
+class Square extends Rectangle {
+    /**
+     * @param {point} center
+     * @param {number} width
+     */
+    constructor(center, width) {
+        super(center, width, width);
+        this._center = center;
+        this._width = width;
+    }
+}
+
+class Circle {
+    /**
+     * @param {point} center
+     * @param {number} radius
+     */
+    constructor(center, radius) {
+        this._center = center;
+        this._radius = radius;
     }
 
-    class Circle {
-        /**
-         * @param {point} center
-         * @param {number} radius
-         */
-        constructor(center, radius) {
-            this._center = center;
-            this._radius = radius;
-        }
-        /**
-         * @returns {number} 
-         */
-        get CircleArea() {
-            return (Math.PI * (radius * 2));
-        }
-        /**
-         * @returns {number} 
-         */
-        get CirclePerimeter() {
-            return (2 * Math.PI * radius);
-        }
+    /**
+     * @returns {number}
+     */
+    get CircleArea() {
+        return (Math.PI * (radius * 2));
     }
 
-    class Point {
-        get x() {
-            return this._x;
-        }
+    /**
+     * @returns {number}
+     */
+    get CirclePerimeter() {
+        return (2 * Math.PI * radius);
+    }
+}
 
-        get y() {
-            return this._y;
-        }
-
-        constructor(x, y) {
-            this._x = x;
-            this._y = y;
-        }
-
-        getPointAtOffset(x1, y1) {
-            return new Point(this.x + x1, this.y + y1);
-        }
-
-        getDistance(point) {
-            return Math.sqrt(Math.pow(this.x - point.x, 2) + Math.pow(this.y - point.y, 2));
-        }
+class Point {
+    get x() {
+        return this._x;
     }
 
-    let point = new Point(50, 100);
-    console.log(point);
+    get y() {
+        return this._y;
+    }
 
-    let shape = new Shape(point);
-    console.log(shape);
+    constructor(x, y) {
+        this._x = x;
+        this._y = y;
+    }
 
-    let radius = 30;
+    getPointAtOffset(x1, y1) {
+        return new Point(this.x + x1, this.y + y1);
+    }
 
-    // let polygon = new Polygon(shape, points);
-    // console.log(polygon);
+    getDistance(point) {
+        return Math.sqrt(Math.pow(this.x - point.x, 2) + Math.pow(this.y - point.y, 2));
+    }
+}
 
-    let rectangle = new Rectangle(shape, 30, 20);
-    console.log(rectangle);
+let point = new Point(50, 100);
+console.log(point);
 
-    let square = new Square(shape, 30);
-    console.log(rectangle);
+let shape = new Shape(point);
+console.log(shape);
 
-    let circle = new Circle(shape, radius);
-    console.log(circle);
+let radius = 30;
 
-    Shapes = {
-        Shape: Shape,
-        Polygon: Polygon,
-        Rectangle: Rectangle,
-        Square: Square,
-        Circle: Circle,
-        Point: Point
-    };
+// let polygon = new Polygon(shape, points);
+// console.log(polygon);
+
+let rectangle = new Rectangle(shape, 30, 20);
+console.log(rectangle);
+
+let square = new Square(shape, 30);
+console.log(rectangle);
+
+let circle = new Circle(shape, radius);
+console.log(circle);
+
+Shapes = {
+    Shape: Shape,
+    Polygon: Polygon,
+    Rectangle: Rectangle,
+    Square: Square,
+    Circle: Circle,
+    Point: Point
+};
