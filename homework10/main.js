@@ -27,7 +27,7 @@
 
 class Shape {
     /**
-     * @param {point} center
+     * @param {Point} center
      */
     constructor(center) {
         this._center = center;
@@ -46,7 +46,7 @@ class Polygon {
 
 class Rectangle {
     /**
-     * @param {point} center
+     * @param {Point} center
      * @param {number} width
      * @param {number} height
      */
@@ -73,7 +73,7 @@ class Rectangle {
 
 class Square extends Rectangle {
     /**
-     * @param {point} center
+     * @param {Point} center
      * @param {number} width
      */
     constructor(center, width) {
@@ -85,7 +85,7 @@ class Square extends Rectangle {
 
 class Circle {
     /**
-     * @param {point} center
+     * @param {Point} center
      * @param {number} radius
      */
     constructor(center, radius) {
@@ -152,10 +152,10 @@ let circle = new Circle(shape, radius);
 console.log(circle);
 
 Shapes = {
-    Shape: Shape,
-    Polygon: Polygon,
-    Rectangle: Rectangle,
-    Square: Square,
-    Circle: Circle,
-    Point: Point
+    Shape,
+    Polygon,
+    Rectangle,
+    Square,
+    Circle,
+    Point
 };
