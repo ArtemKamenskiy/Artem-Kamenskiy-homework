@@ -37,6 +37,7 @@ class Shape {
 class Polygon {
     constructor(center, points) {
         this._center = center;
+        this._points = points;
     }
 
     // get PolygonPerimeter() {
@@ -59,14 +60,14 @@ class Rectangle {
     /**
      * @returns {number}
      */
-    get RectangleArea() {
+    get area() {
         return (this._width * this._height);
     }
 
     /**
      * @returns {number}
      */
-    get RectanglePerimeter() {
+    get perimeter() {
         return ((this._width + this._height) * 2);
     }
 }
@@ -96,19 +97,24 @@ class Circle {
     /**
      * @returns {number}
      */
-    get CircleArea() {
+    get area() {
         return (Math.PI * (radius * 2));
     }
 
     /**
      * @returns {number}
      */
-    get CirclePerimeter() {
+    get perimeter() {
         return (2 * Math.PI * radius);
     }
 }
 
 class Point {
+    constructor(x, y) {
+        this._x = x;
+        this._y = y;
+    }
+
     get x() {
         return this._x;
     }
@@ -117,10 +123,6 @@ class Point {
         return this._y;
     }
 
-    constructor(x, y) {
-        this._x = x;
-        this._y = y;
-    }
 
     getPointAtOffset(x1, y1) {
         return new Point(this.x + x1, this.y + y1);
