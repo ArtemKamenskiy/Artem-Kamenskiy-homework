@@ -25,8 +25,9 @@
  */
 
 
-class Shape{
+class Shape {
     center: Point;
+
     constructor(center: Point) {
         this.center = center;
     }
@@ -35,6 +36,7 @@ class Shape{
 class Polygon {
     center: Point;
     points: Array<Point>;
+
     constructor(center: Point, points: Array<Point>) {
         this.center = center;
         this.points = points;
@@ -49,6 +51,7 @@ class Rectangle {
     center: Point;
     width: number;
     height: number;
+
     constructor(center: Point, width: number, height: number) {
         this.center = center;
         this.width = width;
@@ -65,10 +68,6 @@ class Rectangle {
 }
 
 class Square extends Rectangle {
-    /**
-     * @param {Point} center
-     * @param {number} width
-     */
     constructor(center: Point, width: number) {
         super(center, width, width);
         this.center = center;
@@ -76,9 +75,10 @@ class Square extends Rectangle {
     }
 }
 
-class Circle{
+class Circle {
     center: Point;
     radius: number;
+
     constructor(center: Point, radius: number) {
         this.center = center;
         this.radius = radius;
@@ -93,9 +93,10 @@ class Circle{
     }
 }
 
-class Point{
+class Point {
     xNumber: number;
     yNumber: number;
+
     constructor(x: number, y: number) {
         this.xNumber = x;
         this.yNumber = y;
@@ -130,16 +131,16 @@ let radius = 30;
 // let polygon = new Polygon(shape, points);
 // console.log(polygon);
 
-let rectangle = new Rectangle(shape, 30, 20);
+let rectangle = new Rectangle(point, 30, 20);
 console.log(rectangle);
 
-let square = new Square(shape, 30);
+let square = new Square(point, 30);
 console.log(rectangle);
 
-let circle = new Circle(shape, radius);
+let circle = new Circle(point, radius);
 console.log(circle);
 
-Shapes = {
+let Shapes = {
     Shape,
     Polygon,
     Rectangle,
