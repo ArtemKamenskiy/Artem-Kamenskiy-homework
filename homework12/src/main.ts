@@ -26,6 +26,9 @@
 
 
 class Shape {
+    /**
+     * @param {Point} center
+     */
     center: Point;
 
     constructor(center: Point) {
@@ -48,6 +51,11 @@ class Polygon {
 }
 
 class Rectangle {
+    /**
+     * @param {Point} center
+     * @param {number} width
+     * @param {number} height
+     */
     center: Point;
     width: number;
     height: number;
@@ -58,24 +66,36 @@ class Rectangle {
         this.height = height;
     }
 
+    /**
+     * @returns {number}
+     */
     get area(): number {
         return (this.width * this.height);
     }
 
+    /**
+     * @returns {number}
+     */
     get perimeter(): number {
         return ((this.width + this.height) * 2);
     }
 }
 
 class Square extends Rectangle {
+    /**
+     * @param {Point} center
+     * @param {number} width
+     */
     constructor(center: Point, width: number) {
         super(center, width, width);
-        this.center = center;
-        this.width = width;
     }
 }
 
 class Circle {
+    /**
+     * @param {Point} center
+     * @param {number} radius
+     */
     center: Point;
     radius: number;
 
@@ -84,16 +104,26 @@ class Circle {
         this.radius = radius;
     }
 
+    /**
+     * @returns {number}
+     */
     get area(): number {
         return (Math.PI * (this.radius * 2));
     }
 
+    /**
+     * @returns {number}
+     */
     get perimeter(): number {
         return (2 * Math.PI * this.radius);
     }
 }
 
 class Point {
+    /**
+     * @param {number} xNumber
+     * @param {number} yNumber
+     */
     xNumber: number;
     yNumber: number;
 
