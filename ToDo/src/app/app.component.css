@@ -1,0 +1,89 @@
+@font-face {
+  font-family: Laila-SemiBold;
+  src: url(../fonts/Laila-SemiBold.ttf);
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 600px;
+  height: auto;
+}
+.h1_todo{
+  font-size: 50px;
+  font-family: Laila-SemiBold, serif;
+}
+.p_todo{
+  font-size: 20px;
+  font-family: Laila-SemiBold, serif;
+}
+.add {
+  width: 100px;
+  height: 49px;
+  border: none;
+  background-color: #336699;
+  border-radius: 5px;
+}
+
+.deleteAll {
+  background-color: darkred;
+}
+
+.input {
+  width: 400px;
+  height: 44px;
+  border: none;
+  border-bottom: 1px solid black;
+
+}
+
+.one {
+  width: 500px;
+  height: 49px;
+  display: flex;
+  margin-top: 10px;
+}
+
+.p_task {
+  width: 400px;
+  height: 45px;
+  border: 1px solid black;
+  margin: 0;
+  font-size: 25px;
+}
+
+.edit {
+  background-image: url(../img/edit.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #efe209;
+  border-radius: 10px;
+  width: 50px;
+  border: none;
+}
+
+.delete {
+  background-image: url(../img/delete.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: red;
+  border-radius: 10px;
+  width: 50px;
+  border: none;
+}
+
+.check {
+  width: 50px;
+  height: 48px;
+  margin-top: 0px;
+  border-radius: 20px;
+  background-color: transparent;
+
+}
+
+label {
+  width: 50px;
+  height: 48px;
+  margin-top: 0px;
+  border-radius: 20px;
+  background-color: transparent;
+}
