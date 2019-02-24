@@ -17,14 +17,19 @@ export class AppComponent {
   submitForm() {
     this.tasks.push(this.form.value.task);
     this.form.reset();
+    localStorage.setItem('tasks', JSON.stringify(this.tasks));
   }
 
   deleteTask(index: number) {
     this.tasks.splice(index, 1);
+    localStorage.removeItem('tasks');
+    localStorage.clear();
   }
 
   deleteTaskAll(index: number) {
     this.tasks.splice(index, this.tasks.length);
+    localStorage.removeItem('tasks');
+    localStorage.clear();
   }
 }
 
