@@ -23,10 +23,13 @@ export class AppComponent {
   deleteTask(index: number) {
     this.tasks.splice(index, 1);
     localStorage.removeItem('tasks');
+    localStorage.clear();
   }
 
   deleteTaskAll(index: number) {
     this.tasks.splice(index, this.tasks.length);
+    localStorage.removeItem('tasks');
+    localStorage.clear();
   }
 
   focusInput() {
