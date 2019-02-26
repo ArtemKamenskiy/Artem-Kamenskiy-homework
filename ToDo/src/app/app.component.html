@@ -1,7 +1,7 @@
 <div class="wrapper">
   <h1 class="h1_todo">ToDo List</h1>
   <ng-container>
-  <p class="p_todo">Quantity tasks:<span *ngIf="tasks.length > 0">{{tasks.length}}</span></p>
+    <p class="p_todo">Quantity tasks:<span *ngIf="tasks.length > 0">{{tasks.length}}</span></p>
   </ng-container>
   <form [formGroup]="form" (submit)="submitForm()">
     <input class="input" placeholder="Your task..." formControlName="task">
@@ -13,7 +13,8 @@
       <input type="checkbox" class="check">
     </label>
     <p class="p_task">{{task}}</p>
-    <button class="edit"></button>
+    <input id="editInp" type="text" class="editInput" matInput>
+    <button class="edit" (click)="focusInput()"></button>
     <button class="delete" (click)="deleteTask(i)"></button>
   </div>
 </div>

@@ -9,12 +9,12 @@
   height: auto;
 }
 
-.h1_todo{
+.h1_todo {
   font-size: 50px;
   font-family: Laila-SemiBold, serif;
 }
 
-.p_todo{
+.p_todo {
   font-size: 20px;
   font-family: Laila-SemiBold, serif;
 }
@@ -40,14 +40,14 @@
 }
 
 .one {
-  width: 500px;
+  width: 700px;
   height: 49px;
   display: flex;
   margin-top: 10px;
 }
 
 .p_task {
-  width: 400px;
+  width: 300px;
   height: 45px;
   margin: 0;
   font-size: 25px;
@@ -88,4 +88,9 @@ label {
   margin-top: 0;
   border-radius: 20px;
   margin-right: 10px;
+}
+
+.editInput {
+  border: none;
+  width: 200px;
 }
