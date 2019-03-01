@@ -13,8 +13,10 @@
       <input type="checkbox" class="check">
     </label>
     <p class="p_task">{{task}}</p>
-    <input id="editInp" type="text" class="editInput" [(ngModel)]="task">
+    <p class="Edit_your_task" *ngIf="show">Edit your task:</p>
+    <input #editInp type="text" class="editInput" [(ngModel)]="task" *ngIf="show">
     <button class="edit" (click)="focusInput()"></button>
     <button class="delete" (click)="deleteTask(i)"></button>
   </div>
 </div>
+

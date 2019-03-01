@@ -1,13 +1,18 @@
-import {Component} from '@angular/core';
+import {Component, ViewChild, ElementRef} from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
-
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
+
+  @ViewChild('editInp') searchElement: ElementRef;
+  // @ts-ignore
+  @ViewChild('Edit_your_task') searchElement: ElementRef;
+  show: false;
   tasks = [];
 
   form: FormGroup = new FormGroup({
@@ -20,22 +25,25 @@ export class AppComponent {
     localStorage.setItem('tasks', JSON.stringify(this.tasks));
   }
 
-  deleteTask(index: number) {
-    this.tasks.splice(index, 1);
-    localStorage.removeItem('tasks');
-    localStorage.clear();
-  }
-
   deleteTaskAll(index: number) {
     this.tasks.splice(index, this.tasks.length);
     localStorage.removeItem('tasks');
     localStorage.clear();
   }
 
-  focusInput() {
-    document.getElementById('editInp').focus();
+  deleteTask(index: number) {
+    this.tasks.splice(index, 1);
+    localStorage.removeItem('tasks');
+    localStorage.clear();
   }
 
+  focusInput() {
+    // @ts-ignore
+    this.show = !this.show;
+    setTimeout(() => {
+      this.searchElement.nativeElement;
+    }, 0);
+  }
 }
 
 
