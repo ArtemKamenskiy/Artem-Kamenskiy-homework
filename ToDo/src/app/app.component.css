@@ -3,105 +3,24 @@
   src: url(../fonts/Laila-SemiBold.ttf);
 }
 
-.wrapper {
-  margin: 0 auto;
-  width: 605px;
-  height: auto;
-}
-
-.h1_todo{
-  font-size: 50px;
-  font-family: Laila-SemiBold, serif;
-}
-
-.p_todo{
-  font-size: 20px;
-  font-family: Laila-SemiBold, serif;
-}
-
-.add {
-  width: 100px;
-  height: 49px;
-  border: none;
-  background-color: #336699;
-  border-radius: 5px;
-}
-
-.deleteAll {
-  background-color: darkred;
-  margin-left: 5px;
-}
-
-.input {
-  width: 400px;
-  height: 44px;
-  border: none;
-  border-bottom: 1px solid black;
-}
-
-.one {
-  width: 900px;
-  height: 49px;
-  display: flex;
-  margin-top: 10px;
-}
-
-.p_task {
-  width: 300px;
-  height: 45px;
-  margin: 0;
-  font-size: 25px;
-  padding-top: 10px;
-  font-family: Laila-SemiBold, serif;
-}
-
-.Edit_your_task {
-  width: 200px;
-  height: 45px;
-  margin: 0;
-  font-size: 25px;
-  padding-top: 10px;
-  font-family: Laila-SemiBold, serif;
-}
-
-.edit {
-  background-image: url(../img/edit.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: #efe209;
-  border-radius: 10px;
-  width: 50px;
-  border: none;
-  margin-left: 5px;
-}
-
-.delete {
-  background-image: url(../img/delete.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: red;
-  border-radius: 10px;
-  width: 50px;
-  border: none;
-  margin-left: 5px;
-}
-
-.check {
-  width: 50px;
-  height: 48px;
-  margin-top: 0;
-  background-color: white;
-}
-
-label {
-  width: 50px;
-  height: 48px;
-  margin-top: 0;
-  border-radius: 20px;
+a{
+  text-decoration: none;
+  padding: 15px 20px 15px 20px;
   margin-right: 10px;
-}
-.editInput{
-  width: 200px;
+  border-radius: 10px;
+  background-color: #336699;
+  color: black;
+  font-family: Laila-SemiBold;
   font-size: 25px;
-  font-family: Laila-SemiBold, serif;
+
 }
+a:hover{
+  background-color: darkred;
+
+}
+
+div{
+  width: 605px;
+  margin: 0 auto;
+}
+

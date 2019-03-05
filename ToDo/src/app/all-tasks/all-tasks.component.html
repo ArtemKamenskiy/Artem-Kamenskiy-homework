@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <h1 class="h1_todo">To Do List</h1>
+  <ng-container>
+    <p class="p_todo">Quantity tasks:<span *ngIf="tasks.length > 0">{{tasks.length}}</span></p>
+  </ng-container>
+  <form>
+    <input type="text" class="input" placeholder="Your task..." #newTask>
+    <button class="add" (click)="addTask(newTask.value)">Add</button>
+    <button class="add deleteAll" (click)="deleteTaskAll()">Delete All</button>
+  </form>
+  <ul *ngFor="let task of tasks; let i = index" class="one">
+    <li class="p_task" [class.complete] = 'task.complete'>
+      <label>
+        <input type="checkbox" class="check" id="ch" (click)="toggle(task)">
+      </label>
+      <p class="paragr">{{task.title}}</p>
+      <input #editInp type="text" class="editInput" [(ngModel)]="task.title" *ngIf="show">
+      <button class="edit" (click)="focusInput()"></button>
+      <button class="delete" (click)="deleteTask(i)"></button>
+    </li>
+  </ul>
+</div>
