@@ -9,11 +9,7 @@ class newTaskItem {
   templateUrl: './all-tasks.component.html',
   styleUrls: ['./all-tasks.component.css']
 })
-export class AllTasksComponent implements OnInit {
-
-  constructor() {
-  }
-
+export class AllTasksComponent {
   @ViewChild('editInp') searchElement: ElementRef;
   // @ts-ignore
   @ViewChild('Edit_your_task') searchElement: ElementRef;
@@ -51,9 +47,6 @@ export class AllTasksComponent implements OnInit {
 
   toggle(task) {
     task.complete = !task.complete;
-  }
-
-  ngOnInit() {
   }
 
 }

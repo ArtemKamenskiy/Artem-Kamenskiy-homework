@@ -9,7 +9,7 @@
   height: auto;
 }
 
-.h1_todo{
+.heading_todo{
   font-size: 50px;
   font-family: Laila-SemiBold, serif;
 }
@@ -120,7 +120,7 @@ label {
   font-size: 25px;
   font-family: Laila-SemiBold, serif;
 }
-.paragr{
+.paragraph{
   width: 400px;
   height: 45px;
   margin: 0px;

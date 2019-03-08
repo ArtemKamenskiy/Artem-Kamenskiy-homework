@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <h1 class="h1_todo">To Do List</h1>
+  <h1 class="heading_todo">To Do List</h1>
   <ng-container>
     <p class="p_todo">Quantity tasks:<span *ngIf="tasks.length > 0">{{tasks.length}}</span></p>
   </ng-container>
@@ -13,7 +13,7 @@
       <label>
         <input type="checkbox" class="check" id="ch" (click)="toggle(task)">
       </label>
-      <p class="paragr">{{task.title}}</p>
+      <p class="paragraph">{{task.title}}</p>
       <input #editInp type="text" class="editInput" [(ngModel)]="task.title" *ngIf="show">
       <button class="edit" (click)="focusInput()"></button>
       <button class="delete" (click)="deleteTask(i)"></button>
