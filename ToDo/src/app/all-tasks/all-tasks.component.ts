@@ -1,6 +1,5 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 
-
 class newTaskItem {
 }
 
@@ -41,13 +40,12 @@ export class AllTasksComponent {
     // @ts-ignore
     this.show = !this.show;
     setTimeout(() => {
-      this.searchElement.nativeElement;
+      this.searchElement.nativeElement.focus();
     }, 0);
   }
 
   toggle(task) {
     task.complete = !task.complete;
   }
-
 }
 
