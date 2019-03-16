@@ -1,7 +1,4 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
-
-class newTaskItem {
-}
+import {Component, ElementRef, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-all-tasks',
@@ -10,10 +7,8 @@ class newTaskItem {
 })
 export class AllTasksComponent {
   @ViewChild('editInp') searchElement: ElementRef;
-  // @ts-ignore
-  @ViewChild('Edit_your_task') searchElement: ElementRef;
 
-  tasks: newTaskItem[] = [];
+  tasks = [];
 
   addTask(title) {
     this.tasks.push({
@@ -32,8 +27,7 @@ export class AllTasksComponent {
 
   deleteTask(index: number) {
     this.tasks.splice(index, 1);
-    localStorage.removeItem('tasks');
-    localStorage.clear();
+    localStorage.setItem('tasks', JSON.stringify(this.tasks));
   }
 
   focusInput() {
@@ -42,10 +36,12 @@ export class AllTasksComponent {
     setTimeout(() => {
       this.searchElement.nativeElement.focus();
     }, 0);
+    localStorage.setItem('tasks', JSON.stringify(this.tasks));
   }
 
   toggle(task) {
     task.complete = !task.complete;
+    localStorage.setItem('tasks', JSON.stringify(this.tasks));
   }
 }
 
