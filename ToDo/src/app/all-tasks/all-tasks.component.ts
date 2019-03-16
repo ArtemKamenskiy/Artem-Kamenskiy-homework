@@ -9,6 +9,7 @@ export class AllTasksComponent {
   @ViewChild('editInp') searchElement: ElementRef;
 
   tasks = [];
+  show: boolean;
 
   addTask(title) {
     this.tasks.push({

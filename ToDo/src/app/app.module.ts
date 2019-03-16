@@ -7,7 +7,6 @@ import {Routes, RouterModule} from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AllTasksComponent } from './all-tasks/all-tasks.component';
 
-
 const appRoutes: Routes = [
   {path: '', component: AllTasksComponent},
   {path: '**', component: NotFoundComponent}
