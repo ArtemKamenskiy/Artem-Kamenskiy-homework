@@ -3,7 +3,7 @@ import {Component, ElementRef, ViewChild} from '@angular/core';
 @Component({
   selector: 'app-all-tasks',
   templateUrl: './all-tasks.component.html',
-  styleUrls: ['./all-tasks.component.css']
+  styleUrls: ['./all-tasks.component.scss']
 })
 export class AllTasksComponent {
   @ViewChild('editInp') searchElement: ElementRef;
@@ -32,7 +32,6 @@ export class AllTasksComponent {
   }
 
   focusInput() {
-    // @ts-ignore
     this.show = !this.show;
     setTimeout(() => {
       this.searchElement.nativeElement.focus();
