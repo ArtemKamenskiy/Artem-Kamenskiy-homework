@@ -1,0 +1,127 @@
+$font-stack: Laila-SemiBold, serif;
+@font-face {
+  font-family: Laila-SemiBold;
+  src: url(src/fonts/Laila-SemiBold.ttf);
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 605px;
+  height: auto;
+
+  .heading_todo{
+    font-size: 50px;
+    font-family: $font-stack;
+  }
+
+  .p_todo{
+    font-size: 20px;
+    font-family: $font-stack;
+  }
+
+  .add {
+    width: 100px;
+    height: 49px;
+    border: none;
+    background-color: #336699;
+    border-radius: 5px;
+  }
+
+  .deleteAll {
+    background-color: darkred;
+    margin-left: 5px;
+  }
+
+  .input {
+    width: 400px;
+    height: 44px;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+
+  .one {
+    width: 900px;
+    height: 49px;
+    display: flex;
+    margin-top: 10px;
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+
+    .p_task {
+      width: 900px;
+      height: 51px;
+      display: flex;
+      margin: 0;
+      font-size: 25px;
+      font-family: $font-stack;
+    }
+
+    .complete {
+      text-decoration: line-through;
+      width: 900px;
+      height: 51px;
+      margin: 0;
+      font-size: 25px;
+      font-family: $font-stack;
+    }
+
+    .Edit_your_task {
+      width: 200px;
+      height: 45px;
+      margin: 0;
+      font-size: 25px;
+      padding-top: 10px;
+      font-family: $font-stack;
+    }
+
+    .edit {
+      background-image: url(src/img/edit.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: #efe209;
+      border-radius: 10px;
+      width: 50px;
+      border: none;
+      margin-left: 5px;
+    }
+
+    .delete {
+      background-image: url(src/img/delete.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: red;
+      border-radius: 10px;
+      width: 50px;
+      border: none;
+      margin-left: 5px;
+    }
+    label {
+      width: 50px;
+      height: 48px;
+      margin-top: 0;
+      border-radius: 20px;
+      margin-right: 10px;
+
+      .check {
+        width: 50px;
+        height: 48px;
+        margin-top: 0;
+        background-color: white;
+      }
+    }
+
+    .editInput {
+      width: 200px;
+      font-size: 25px;
+      font-family: $font-stack;
+    }
+
+    .paragraph {
+      width: 400px;
+      height: 45px;
+      margin: 0px;
+      padding: 10px;
+    }
+  }
+}
